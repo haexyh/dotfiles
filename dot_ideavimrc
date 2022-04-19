@@ -1,0 +1,72 @@
+let mapleader = ","
+set incsearch
+set hls
+set ignorecase
+
+set clipboard
+set nu
+set rnu
+set showmode
+set visualbell
+set noerrorbells
+
+imap kj <ESC>
+imap jk <ESC>
+
+" Navigation
+nnoremap <leader>d :action GotoDeclaration <CR>
+nnoremap <leader>i :action GoToImplementation <CR>
+
+nnoremap <leader>fu :action FindUsages <CR>
+nnoremap <leader>fum :action FindUsagesMenuGroup <CR>
+
+" refactor this
+"nnoremap <leader>rt :action RefactoringMenu <CR>
+nnoremap <leader>rf :action RefactoringMenu <CR>
+" Rename
+nnoremap <leader>rr :action RenameElement<CR>
+vnoremap <leader>rr :action RenameElement<CR>
+
+" Command Enter
+"not yet
+" nnoremap <leader>f <A-CR>
+" vnoremap <leader>f <M-CR>
+"nnoremap <leader>f :action Refactorings.QuickListPopupAction  <CR>
+
+" Save
+nnoremap <leader>fs :action SaveDocument <CR>
+vnoremap <leader>fs :action SaveDocument <CR>
+" ReformatCode
+nnoremap <leader>fr :action ReformatCode<CR>
+vnoremap <leader>fr :action ReformatCode<CR>
+
+" Open Explorer
+nnoremap <leader>ne :action ActivateProjectToolWindow<CR>
+vnoremap <leader>ne :action ActivateProjectToolWindow<CR>
+
+" HideAll
+nnoremap <leader>nh :action HideAllWindows<CR>
+vnoremap <leader>nh :action HideAllWindows<CR>
+
+" Wrap windows together
+nnoremap <leader>usa :action UnsplitAll<CR>
+vnoremap <leader>usa :action UnsplitAll<CR>
+
+" Comment
+nnoremap <leader>cl :action CommentByLineComment<CR>
+vnoremap <leader>cl :action CommentByLineComment<CR>
+
+nnoremap <leader>cb :action CommentByBlockComment<CR>
+vnoremap <leader>cb :action CommentByBlockComment<CR>
+
+nnoremap <leader>rc :action CollapseAllRegions<CR>
+
+" reload Vimrc
+nnoremap <leader>rr :action IdeaVim.ReloadVimRc.reload <CR>
+
+" Help
+nnoremap <leader>hh :map <CR>
+vnoremap <leader>hh :map <CR>
+
+nnoremap <leader>ga :action Git.MainMenu.FileActions <CR>
+
