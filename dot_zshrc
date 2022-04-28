@@ -113,9 +113,10 @@ alias dock-mobi-up="/usr/local/bin/docker-compose -f /Users/pascalklaiss/git/smi
 alias dock-kill="docker kill $(docker ps -q)"
 alias dock-comp-down="/usr/local/bin/docker-compose -f /Users/pascalklaiss/git/smino/Source/docker-compose.yml -f /Users/pascalklaiss/git/smino/Source/docker-compose.override.yml -p source down --remove-orphans"
 
-alias dls="docker container ls"
+alias dls="docker ps --format '{{.Status}}\t[{{.Names}}\t]'"
 
-alias cmzd="chezmoi"
+alias cmz="chezmoi"
+alias cmz-edit="chezmoi edit"
 alias cmz-add="chezmoi add"
 alias cmz-edit="chezmoi edit"
 alias cmz-apply="chezmoi -v apply"
