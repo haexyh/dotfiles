@@ -126,6 +126,7 @@ alias cmz-home="chezmoi cd"
 export PATH="/opt/homebrew/opt/node@16/bin:$PATH"
 # Ionic error
 export LANG=en_US.UTF-8
+exprot JAVA_HOME="$(/usr/libexec/java_home)"
 # default editor 
 export VISUAL=vim
 export EDITOR="$VISUAL"

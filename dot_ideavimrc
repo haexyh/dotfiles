@@ -24,8 +24,8 @@ nnoremap <leader>fum :action FindUsagesMenuGroup <CR>
 "nnoremap <leader>rt :action RefactoringMenu <CR>
 nnoremap <leader>rf :action RefactoringMenu <CR>
 " Rename
-nnoremap <leader>rr :action RenameElement<CR>
-vnoremap <leader>rr :action RenameElement<CR>
+nnoremap <leader>re :action RenameElement<CR>
+vnoremap <leader>re :action RenameElement<CR>
 
 " Command Enter
 "not yet
