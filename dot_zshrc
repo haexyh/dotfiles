@@ -122,12 +122,22 @@ alias cmz-edit="chezmoi edit"
 alias cmz-apply="chezmoi -v apply"
 alias cmz-home="chezmoi cd"
 
+alias reload="$HOME .zshrc"
 # node
 export PATH="/opt/homebrew/opt/node@16/bin:$PATH"
 # Ionic error
 export LANG=en_US.UTF-8
-exprot JAVA_HOME="$(/usr/libexec/java_home)"
+#export JAVA_HOME="$(/usr/libexec/java_home)"
+#export ANDROID_HOME="/Users/$USER/Library/Android/sdk"
 # default editor 
 export VISUAL=vim
 export EDITOR="$VISUAL"
+
+#dns script
+export DNS_HOME_IP=192.168.0.177
+export DNS_SMINO_IP=192.168.10.177
+export DNS_PUBLIC_SERVERS="1.1.1.1"
+
+
+
 
