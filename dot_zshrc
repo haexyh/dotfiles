@@ -138,6 +138,15 @@ export DNS_HOME_IP=192.168.0.177
 export DNS_SMINO_IP=192.168.10.177
 export DNS_PUBLIC_SERVERS="1.1.1.1"
 
-
+# Android SDK
+export ANDROID_SDK_ROOT=$HOME/Library/Android/sdk
+## avdmanager, sdkmanager
+export PATH=$PATH:$ANDROID_SDK_ROOT/tools/bin
+## adb, logcat
+export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
+## emulator
+export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
+#Java home
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 
 
