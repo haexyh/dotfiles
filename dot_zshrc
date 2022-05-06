@@ -121,6 +121,7 @@ alias cmz-add="chezmoi add"
 alias cmz-edit="chezmoi edit"
 alias cmz-apply="chezmoi -v apply"
 alias cmz-home="chezmoi cd"
+alias iph="464F79CA-D14A-4726-B1BA-219617994CA9"
 
 alias reload="$HOME .zshrc"
 # node
@@ -148,5 +149,7 @@ export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
 export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
 #Java home
 export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
+#
+
 
 
