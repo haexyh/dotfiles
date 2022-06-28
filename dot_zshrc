@@ -114,6 +114,7 @@ alias dock-kill="docker kill $(docker ps -q)"
 alias dock-comp-down="/usr/local/bin/docker-compose -f /Users/pascalklaiss/git/smino/Source/docker-compose.yml -f /Users/pascalklaiss/git/smino/Source/docker-compose.override.yml -p source down --remove-orphans"
 
 alias dls="docker ps --format '{{.Status}}\t[{{.Names}}\t]'"
+alias rfl="docker exec -it source-redis.smino-1 redis-cli FLUSHALL"
 
 alias cmz="chezmoi"
 alias cmz-edit="chezmoi edit"
