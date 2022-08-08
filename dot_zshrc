@@ -124,6 +124,8 @@ alias cmz-apply="chezmoi -v apply"
 alias cmz-home="chezmoi cd"
 alias iph="464F79CA-D14A-4726-B1BA-219617994CA9"
 
+alias v=lvim
+
 alias reload="$HOME .zshrc"
 # node
 export PATH="/opt/homebrew/opt/node@16/bin:$PATH"
@@ -132,7 +134,7 @@ export LANG=en_US.UTF-8
 #export JAVA_HOME="$(/usr/libexec/java_home)"
 #export ANDROID_HOME="/Users/$USER/Library/Android/sdk"
 # default editor 
-export VISUAL=vim
+export VISUAL=lvim
 export EDITOR="$VISUAL"
 
 #dns script
@@ -150,5 +152,8 @@ export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
 export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
 #Java home
 export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
-
+#Script to path
+export PATH=$USER/Scripts/dns-server-helper.sh:$PATH
+#lvim
+export PATH=~/.local/bin/:$PATH
 

@@ -22,7 +22,7 @@ case $mode in
     ;;
   public)
     dnsServers=$DNS_PUBLIC_SERVERS
-    echo "only dns server set"
+    eval sed "s/HOST_IP=$toReplace/HOST_IP=$hostIp/"  "$HOME/git/smino/Source/.env" | grep HOST_IP
     ;;
   both)
     dnsServers="$DNS_PUBLIC_SERVERS $hostIp"
